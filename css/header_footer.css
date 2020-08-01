@@ -1,0 +1,107 @@
+body,h1,h2,h3,p,div,ul,li,dl,dt,dd{margin:0;padding:0}
+ul,li{list-style:none}
+a{text-decoration:none;color:#000}
+address{font-style:normal}
+body{font-family:"나눔 고딕","맑은 고딕","돋움";font-size:15px} /*원하는 글씨체를 쓰려면?*/
+h2{font-size:25px}
+.red_txt{color:#7d0049}
+
+/*header*/
+#header{width:100%;height:150px;background:#c1d72e;padding-top:50px;position:relative;z-index:10}
+h1{width:84px;height:60px;background:url(../images/logo.jpg) no-repeat;text-indent:-9999px;margin:30px auto 10px}
+h1 a{display:block;width:84px;height:60px}
+    
+.gnb{width:960px;margin:auto;overflow:hidden}
+.gnb h2{position:absolute;left:-9999px;top:-9999px}
+.gnb>ul>li{float:left;width:160px;text-align:center}
+.gnb>ul>li>a{color:#fff;font-size:20px;line-height:50px}
+.menu ul{height:360px;background:#fff;padding-top:10px;border-right:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;overflow:hidden;position:relative;z-index:5}
+.m1 ul{border-left:1px solid #f0f0f0}
+.menu>li:hover{background:url(../images/gnb_hover.jpg)}
+.menu ul:hover,.menu>li:hover ul{background:#f0f0f0}
+/*메뉴부분만 호버할때도 하위메뉴에 해당부분에 색이 칠해지게 하고싶은데...*/
+.depth2 a{line-height:30px}
+.depth2 a:hover{color:#7d0049;font-weight:bold} 
+
+.gnb_bg{width:100%;height:360px;background:#fff;position:absolute;top:200px}
+
+.top_menu_wrap{width:100%;position:absolute;top:50px;color:#fff}
+.top_menu{width:1100px;margin:auto;margin-top:10px}
+.top_menu ul{float:right}
+.top_menu h2{position:absolute;left:-9999px;top:-9999px}
+.top_menu>ul>li{float:left}
+.top_menu_list:after{content:"|";margin:0 10px;color:#fff}
+.top_menu a{color:#fff}
+.language{width:110px;background:url(../images/arrow_lang.png) no-repeat right 5px}
+.language ul{width:110px;margin-top:10px;padding:10px;box-sizing:border-box;border:1px solid #a0a0a0;background:#fff;display:none}
+.language a{line-height:20px;font-size:12px;color:#232323}
+
+.menu ul,.gnb_bg{display:none}
+
+.notice_wrap{position:absolute;width:100%;top:0;height:50px;background:#a0a0a0;color:#fff}
+.notice{width:1100px;margin:auto}
+.notice h2{width:140px;height:50px;background:url(../images/notice.png) no-repeat 0 10px;text-indent:-9999px;margin-right:25px}
+.notice a{display:block;width:140px;height:50px;color:#fff}
+.notice_bg{width:100%;height:150px;background:#b0b0b0;margin-top:50px}
+.notice h2,.notice ul{float:left;line-height:50px}
+.notice li{overflow:hidden}
+.notice1 p,.notice2 p,.notice3 p,.notice4 p{float:left;margin-right:20px}
+.notice1 a,.notice2 a,.notice3 a,.notice4 a{float:left;font-size:14px}
+
+
+.notice_bg,.notice2,.notice3,.notice4{display:none}
+/*css 뺀 내용을 어떻게 처리해야할까*/
+.mini_header_wrap{width:100%;height:50px;background:#c1d72e;position:fixed;z-index:9;top:0} 
+.mini_header{width:1100px;margin:auto;padding:15px 0}
+.mini_header_logo{display:block;width:134px;height:20px;background:url(../images/mini_header_logo.png) no-repeat;margin:auto;text-indent:-9999px}
+.mini_header_menu{display:block;width:20px;height:20px;background:url(../images/mini_header_menu.png) no-repeat;float:right;position:relative;top:-20px;text-indent:-9999px}
+
+/*side_menu*/
+.side_menu{width:50px;position:fixed;bottom:0;right:20px}
+.chat_bot{width:50px;height:50px;background:url(../images/jaid.png) no-repeat center;text-indent:-9999px}
+.top_btn{width:50px;height:50px;background:url(../images/btn_top.png) no-repeat center;text-indent:-9999px;margin:10px 0 20px}
+.side_menu a{display:block;width:84px;height:84px}
+
+/*footer*/
+
+.footer h3{font-size:15px}
+.footer h2{position:absolute;left:-9999px;top:-9999px}
+.footer_top_wrap{background:#f0f0f0}
+.footer_top{width:1100px;margin:auto;padding:30px 0}
+.footer_top h3,.footer_top li{float:left}
+.company_guide,.term,.customer_service{overflow:hidden;line-height:30px}
+.company_guide ul,.term ul,.customer_service ul{margin-left:100px}
+.company_guide li a,.term li a,.customer_service li a{font-size:12px;margin-right:15px}
+
+.footer_bottom_wrap{background:#e0e0e0}
+.footer_bottom{width:1100px;margin:auto;padding:40px 0;position:relative}
+
+.sns_app{overflow:hidden}
+.sns{float:left;margin-right:40px}
+.sns h3{position:absolute;left:-9999px;top:-9999px}
+.sns1{width:40px;height:40px;background:url(../images/twitter.png) no-repeat center;text-indent:-9999px;float:left;margin-right:15px}
+.sns2{width:40px;height:40px;background:url(../images/facebook.png) no-repeat center;text-indent:-9999px;float:left;margin-right:15px}
+.sns3{width:40px;height:40px;background:url(../images/youtube.png) no-repeat center;text-indent:-9999px;float:left;margin-right:15px}
+.sns4{width:40px;height:40px;background:url(../images/insta.png) no-repeat center;text-indent:-9999px;float:left;margin-right:15px}
+.sns5{width:40px;height:40px;background:url(../images/blog.png) no-repeat center;text-indent:-9999px;float:left}
+.sns li a{display:block;width:40px;height:40px}
+
+.app_download h3{float:left;line-height:40px;margin-right:20px}
+.ios{width:48px;height:23px;background:url(../images/app_ios.png) no-repeat;text-indent:-9999px;float:left;margin:10px 15px 0 0}
+.and{width:78px;height:23px;background:url(../images/app_and.png) no-repeat;text-indent:-9999px;float:left;margin-top:10px}
+.ios a{display:block;width:48px;height:23px}
+.and a{display:block;width:78px;height:23px}
+
+.news_letter input{width:260px;height:30px;border:0}
+.news_letter p{color:#a0a0a0;position:absolute;top:25px;left:5px}
+.news_btn{width:30px;height:30px;background:url(../images/news_send.png) no-repeat center;text-indent:-9999px;border:0;cursor:pointer}
+.footer_right{position:absolute;right:0;top:40px}
+.footer_right p a{margin-top:30px;float:right;text-decoration:underline;color:#6b6b6b}
+
+.footer_box{margin-top:35px;font-size:12px}
+.footer_txt1:after,.footer_txt3:after,.footer_txt4:after,.footer_txt5:after,.footer_txt7:after{content:"|";margin:0 10px}
+
+.footer_txt1,.footer_txt2,.footer_txt3,.footer_txt4,.footer_txt5,.footer_txt6,.footer_txt7,.footer_txt8{float:left}
+
+.footer_box1,.footer_box2,.footer_box3{overflow:hidden;margin-bottom:10px}
+.footer_txt1{font-weight:bold}

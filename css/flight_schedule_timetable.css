@@ -1,0 +1,48 @@
+.step{width:1100px;margin:auto;position:relative;z-index:5;padding-top:15px}
+.step h3{position:absolute;top:-9999px;left:-9999px}
+.step>ul>li{float:left}
+.step h4{font-size:15px;margin:0;font-weight:normal}
+.step h4 a{background:url(../images/step_down.png) no-repeat right;padding-right:20px}
+.step2,.step3,.step4{position:relative}
+.step1 a:after,.step1 h4:after,.step2 h4:after,.step3 h4:after{content:">";margin:0 10px}
+.step>ul>li>ul{border:1px solid #e0e0e0;padding:12px 15px}
+.step2 ul,.step3 ul,.step4 ul{width:150px;position:absolute;left:-15px;display:none}
+.step>ul>li>ul a:hover{color:#7d0049;font-weight:bold}
+.s_currently{font-weight:bold}
+
+.title{padding-top:80px;text-align: center;margin-bottom:50px}
+.title h2{margin-bottom:15px;font-size:25px;font-weight:normal}
+
+.tab_menu{width:1100px;margin:auto}
+.tab_menu h3{position:absolute;top:-9999px;left:-9999px}
+.tab_menu ul{overflow:hidden}
+.t_currently{float:left;width:366px;line-height:50px;text-align:center;border:1px solid #7d0049;box-sizing:border-box;background:#7d0049}
+.t_currently a{color:#fff}
+.tab_menu a{display:block;width:364px;height:48px}
+.t,.t2{float:left;width:366px;line-height:50px;text-align:center;border:1px solid #a0a0a0;box-sizing:border-box}
+.t2{border-right:0;border-left:0}
+.t a:hover,.t2 a:hover{background:#f0f0f0}
+
+.m_content{width:1100px;margin:0 auto 120px;position:relative}
+.m_content h4,legend{position:absolute;top:-9999px;left:-9999px}
+.content_form{margin-bottom:50px}
+.content_form fieldset{border:0}
+.radio{text-align:center;padding-top:40px;margin-bottom:30px}
+.s_text{width:650px;margin:0 auto 45px;overflow:hidden}
+.departure_wrap,.destination_wrap,.date{float:left}
+.departure_wrap>a,.destination_wrap>a{display:block;color:#808080;width:200px;line-height:50px;border:1px solid #a0a0a0;padding:0 10px;background:url(../images/ticket_loca.png) no-repeat 160px center;margin-right:25px;box-sizing: border-box}
+.date a{display:block;width:200px;line-height:50px;color:#808080;border:1px solid #a0a0a0;padding:0 10px;background:url(../images/ticket_date.png) no-repeat 160px center;box-sizing: border-box}
+.departure{display:none}
+.destination{display:none}
+.departure,.destination{position:absolute;left:110px;top:155px;overflow:hidden;padding:30px;background:#fff;border:1px solid #e0e0e0;box-sizing:border-box}
+.departure h3,.destination h3{position:absolute;top:-9999px;left:-9999px}
+.sel_contury{float:left;width:164px}
+.sel_contury_l{float:left}
+.sel_contury span,.sel_contury_l span{color:#7d0049;font-size:20px;font-weight:bold}
+.sel_contury ul,.sel_contury_l ul{margin-top:15px}
+.sel_contury li,.sel_contury_l li{line-height:25px}
+.sel_contury a:hover,.sel_contury_l a:hover{color:#7d0049;font-weight:bold}
+.search_btn{width:160px;margin:auto}
+.search_btn button{border:0;background:#c1d72e;width:160px;height:50px;font-size:15px;cursor:pointer}
+.form_txt li:before{content:"- "}
+.form_txt{line-height:26px}

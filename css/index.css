@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body,h1,h2,h3,p,div,ul,li,dl,dt,dd{margin:0;padding:0}
+ul,li{list-style:none}
+a{text-decoration:none;color:#000}
+address{font-style:normal}
+body,input,button{font-family:"Nanum Gothic","맑은 고딕","돋움";font-size:15px}
+h2{font-size:25px}
+.red_txt{color:#7d0049}
+body{margin-top:-20px}
+/*header*/
+#header{width:100%;height:150px;background:#c1d72e;padding-top:50px;position:relative;z-index:10}
+h1{width:84px;height:60px;background:url(../images/logo.jpg) no-repeat;text-indent:-9999px;margin:30px auto 10px}
+h1 a{display:block;width:84px;height:60px}
+    
+.gnb{width:960px;margin:auto;overflow:hidden}
+.gnb_bg{width:100%;height:360px;background:#fff;position:absolute;top:200px}
+.gnb h2{position:absolute;left:-9999px;top:-9999px}
+.gnb>ul>li{float:left}
+.gnb>ul>li>a{width:160px;text-align:center;color:#fff;font-size:20px;line-height:50px;display:block}
+.menu ul{height:360px;background:#fff;padding-top:10px;border-right:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;overflow:hidden;position:relative;z-index:5}
+.m1 ul{border-left:1px solid #f0f0f0}
+.menu>li:hover{background:url(../images/gnb_hover.jpg)}
+.menu ul:hover,.menu>li:hover ul{background:#f0f0f0}
+.menu li ul li a{line-height:30px;display:block;padding:0 10px}
+.menu li ul li a:hover{color:#7d0049;font-weight:bold} 
+.menu ul,.gnb_bg{display:none}
+
+.top_menu_wrap{width:100%;position:absolute;top:50px;color:#fff}
+.top_menu{width:1100px;margin:auto;margin-top:10px}
+.top_menu ul{float:right}
+.top_menu h2{position:absolute;left:-9999px;top:-9999px}
+.top_menu>ul>li{float:left}
+.top_menu_list:after{content:"|";margin:0 10px;color:#fff}
+.top_menu a{color:#fff}
+.language{width:110px;background:url(../images/arrow_lang.png) no-repeat right 5px}
+.language ul{width:110px;margin-top:10px;padding:10px;box-sizing:border-box;border:1px solid #a0a0a0;background:#fff;display:none}
+.language ul a{line-height:20px;font-size:12px;color:#232323}
+
+.notice_wrap{position:absolute;width:100%;top:0;height:50px;background:#a0a0a0;color:#fff}
+.notice{width:1100px;margin:auto;overflow:hidden}
+.notice a{color:#fff}
+.notice h2{width:120px;height:50px;background:url(../images/notice.png) no-repeat 0 10px;text-indent:-9999px;margin-right:25px}
+.notice_bg{width:100%;height:150px;background:#b0b0b0;margin-top:50px;position:absolute}
+.notice h2,.notice a{float:left;line-height:50px}
+.notice span{float:right;margin-left:30px}
+.notice_bg,.notice_etc{display:none}
+
+.mini_header_wrap{width:100%;height:50px;background:#c1d72e;position:fixed;z-index:9;top:0} 
+.mini_header{width:1100px;margin:auto;padding:15px 0}
+.mini_header_logo{display:block;width:134px;height:20px;background:url(../images/mini_header_logo.png) no-repeat;margin:auto;text-indent:-9999px}
+.mini_header_menu{display:block;width:20px;height:20px;background:url(../images/mini_header_menu.png) no-repeat;float:right;position:relative;top:-20px;text-indent:-9999px}
+
+/*content*/
+.main_image h2{position:absolute;left:-9999px;top:-9999px}
+.main_image01{height:505px;background:url(../images/banner1.jpg) no-repeat center;text-indent:-9999px}
+.main_image01 a{display:block;height:505px}
+.banner_slider_wrap{width:1100px;margin:auto;position:relative;top:-370px}
+.main_image_prev{width:18px;height:31px;background:url(../images/banner_prev.png) no-repeat;text-indent:-9999px;float:left}
+.main_image_next{width:18px;height:31px;background:url(../images/banner_next.png) no-repeat;text-indent:-9999px;float:right}
+.main_image_prev:hover{width:75px;height:75px;background:url(../images/banner_prev_hover.png) no-repeat;position:relative;top:-22px;left:-28px}
+.main_image_next:hover{width:75px;height:75px;background:url(../images/banner_next_hover.png) no-repeat;position:relative;top:-22px;left:29px}
+
+.main_banner{position:relative}
+.ticket_search h2,.ticket_search h3{position:absolute;left:-9999px;top:-9999px}
+.ticket_search_wrap{width:100%;position:absolute;z-index:5;top:300px}
+.ticket_search{width:1100px;height:180px;background:rgba(255,255,255,0.9);box-sizing:border-box;margin:auto;padding:40px 30px}
+.bonus{float:right;position:relative;top:-110px}
+.bonus a{display:block;line-height:25px;color:#6b6b6b;position:relative;background:url(../images/ticket_bonus.png) no-repeat center left;padding-left:30px}
+.radio{width:300px;text-align:center;margin:0 auto 30px}
+.departure_wrap,.destination_wrap,.flight_date,.flight_number{float:left}
+.departure_wrap a,.destination_wrap a,.flight_date,.flight_number{color:#6b6b6b}
+.wrap{width:1040px;margin:auto;overflow:hidden}
+.departure_wrap>a,.destination_wrap>a{display:block;width:200px;line-height:30px;border:1px solid #a0a0a0;padding:10px;background:url(../images/ticket_loca.png) no-repeat 160px center;margin-right:30px;box-sizing: border-box}
+.flight_date{display:block;width:200px;line-height:30px;border:1px solid #a0a0a0;padding:10px;background:url(../images/ticket_date.png) no-repeat 160px center;margin-right:30px;box-sizing: border-box}
+.flight_number{display:block;width:200px;line-height:30px;border:1px solid #a0a0a0;padding:10px;background:url(../images/ticket_num.png) no-repeat 160px center;margin-right:30px;box-sizing: border-box}
+.ticket_btn{width:100px;height:50px;border:0;background:#c1d72e;float:right;cursor:pointer}
+
+.departure,.destination{display:none}
+.departure,.destination{position:absolute;top:150px;height:365px;width:890px;padding:30px;background:#fff;border:1px solid #e0e0e0;box-sizing:border-box}
+.sel_contury{float:left;width:164px}
+.sel_contury_l{float:left}
+.sel_contury span,.sel_contury_l span{color:#7d0049;font-size:20px;font-weight:bold}
+.sel_contury ul,.sel_contury_l ul{margin-top:15px}
+.sel_contury li,.sel_contury_l li{line-height:25px}
+.sel_contury a:hover,.sel_contury_l a:hover{color:#7d0049;font-weight:bold}
+ 
+.wish_list_wrap{background:#e0e0e0;padding-top:50px}
+.wish_list{width:1100px;height:250px;margin:auto;background:url(../images/wishlist_bg.png) no-repeat;position:relative}
+.wish_list_text{margin-left:250px}
+.wish_list .txt{position:relative;top:0px}
+.wish_list h2{position:relative;top:60px}
+.wish_btn_wrap{position:relative;top:85px;overflow:hidden}
+.wish_list .btn1{width:235px;line-height:40px;background:#c1d72e;text-align:center;float:left}
+.wish_list .btn2{width:160px;line-height:40px;background:#c1d72e;text-align:center;float:left;margin-left:30px}
+.wish_list .btn1:hover,.wish_list .btn2:hover{background:#7c0048;color:#fff}
+.wish_list_more{width:500px;background:#fff;position:absolute;top:180px;left:515px;border:1px solid #e0e0e0;padding:30px;line-height:25px; box-sizing:border-box;z-index:5;display:none}
+
+.cheapest_price{padding-top:50px;width:1100px;margin:0 auto 100px;position:relative;overflow:hidden}
+.cheapest_price h2{text-align:center;margin:50px 0 50px}
+.cheapest_price div{float:left;width:310px;height:330px;margin:0 28px}
+.cheapest_product1{background:url(../images/cheapest_product01.jpg) no-repeat;60px;position:relative;background-size:310px;transition:0.2s}
+.cheapest_product2{background:url(../images/cheapest_product02.jpg) no-repeat; position:relative;background-size:310px;transition:0.2s}
+.cheapest_product3{background:url(../images/cheapest_product03.jpg) no-repeat; position:relative;background-size:310px;transition:0.2s}
+.cheapest_price div:hover{background-size:320px}
+.product1_txt{width:310px;height:130px;background:rgba(255,255,255,0.8);margin-top:200px;padding:30px 15px 20px;box-sizing:border-box}
+.product2_txt{width:310px;height:130px;background:rgba(255,255,255,0.8);margin-top:200px;padding:30px 15px 20px;box-sizing:border-box}
+.product3_txt{width:310px;height:130px;background:rgba(255,255,255,0.8);margin-top:200px;padding:30px 15px 20px;box-sizing:border-box}
+.bold_20{font-weight:bold;font-size:20px}
+.blue_box{width:90px;line-height:30px;background:#00adef;text-align:center;color:#fff;position:relative;top:-300px;left:200px}
+.green_box{width:90px;line-height:30px;background:#c1d72e;text-align:center;color:#fff;position:relative;top:-298px;left:200px}
+.cheapest_price .date{margin-top:10px}
+
+.custom_air_wrap{background:url(../images/custom_bg.jpg) no-repeat center;margin-bottom:50px}
+.custom_air{width:1100px;height:235px;margin:auto;background:url(../images/airplane.png) no-repeat center left;border-top:1px solid rgba(255,255,255,0)}
+.custom_air_txt{position:relative;margin:50px 0 0 300px;}
+.custom_air_txt h2{position:relative;top:35px;color:#fff}
+.custom_air_txt p{position:relative;top:-35px;color:#fff}
+.custom_air_txt a{display:block;width:163px;line-height:40px;background:#c1d72e;text-align:center;box-sizing:border-box;position:relative;top:55px}
+.custom_air_txt a:hover{background:#7c0048;color:#fff}
+
+
+.events{width:1100px;margin:0 auto 50px;height:460px;position:relative}
+.events h2{text-align:center;margin:100px 0 50px}
+.events p{width:60px;height:20px;border:1px solid #c1d72e;background:url(../images/event_more.png) no-repeat center;text-indent:-9999px;margin:auto;margin-top:-410px;float:right}
+.events p a{display:block;width:60px;height:20px}
+.events p:hover{background:url(../images/event_more_hover.png) no-repeat center}
+.event1 dt a,.event2 dt a{color:#fff;font-size:20px}
+.event1 dd,.event2 dd{color:#fff;margin-top:10px}
+.event1_date,.mv_skyshop a{position:absolute;top:-9999px;left:-9999px}
+
+.event1>a,.event2>a{display:block;width:540px;height:370px;position:relative;z-index:1;color:#fff}
+.event1{width:540px;height:370px;background:url(../images/event01.png) no-repeat;float:left;margin-right:20px;position:relative;overflow:hidden}
+.event1 dl{width:540px;height:110px;background:rgba(0,0,0,0.8);padding:30px;margin-top:260px;box-sizing:border-box;transition:0.2s}
+.event2{width:540px;height:370px;background:url(../images/event02.png) no-repeat;float:left;position:relative;overflow:hidden}
+.event2 dl{width:540px;height:110px;background:rgba(0,0,0,0.8);padding:30px;margin-top:260px;box-sizing:border-box;transition:0.2s}
+
+.event1:hover dl,.event2:hover dl{width:540px;height:370px;background:rgba(0,0,0,0.8);margin-top:0;text-align:center;padding-top:150px}
+.event1:hover .green_txt, .event2:hover .green_txt{color:#c1d72e}
+.event1:hover .event1_date{top:270px;left:180px}
+.event2:hover .mv_skyshop{color:#fff;top:270px;left:210px}
+
+.extra_service{width:1100px;margin:100px auto 150px;overflow:hidden}
+.extra_service h2{text-align:center;font-size:25px;margin-bottom:40px}
+.extra_service li{float:left}
+.ex_service1 a,.ex_service2 a,.ex_service3 a,.ex_service4 a,.ex_service5 a{font-size:20px}
+.ex_service1 a{display:block;width:131px;background:url(../images/service01.png) no-repeat center 20px;padding-top:140px;text-align:center;margin-right:110px;box-sizing:border-box}
+.ex_service2 a{display:block;width:131px;background:url(../images/service02.png) no-repeat center 10px;padding-top:140px;text-align:center;margin-right:110px;box-sizing:border-box}
+.ex_service3 a{display:block;width:131px;background:url(../images/service03.png) no-repeat center 0;padding-top:140px;text-align:center;margin-right:110px;box-sizing:border-box}
+.ex_service4 a{display:block;width:131px;background:url(../images/service04.png) no-repeat center 20px;padding-top:140px;text-align:center;margin-right:110px;box-sizing:border-box}
+.ex_service5 a{display:block;width:131px;background:url(../images/service05.png) no-repeat center 0;padding-top:140px;text-align:center;;box-sizing:border-box}
+.ex_service1 a:hover{background:url(../images/service01_hover.png) no-repeat center 19px}
+.ex_service2 a:hover{background:url(../images/service02_hover.png) no-repeat center 10px}
+.ex_service3 a:hover{background:url(../images/service03_hover.png) no-repeat center 0}
+.ex_service4 a:hover{background:url(../images/service04_hover.png) no-repeat center 20px}
+.ex_service5 a:hover{background:url(../images/service05_hover.png) no-repeat center 0}
+
+.side_menu{width:50px;position:fixed;bottom:0;right:20px}
+.chat_bot{width:50px;height:50px;background:url(../images/jaid.png) no-repeat center;text-indent:-9999px}
+.top_btn{width:50px;height:50px;background:url(../images/btn_top.png) no-repeat center;text-indent:-9999px;margin:10px 0 20px}
+.side_menu a{display:block;width:84px;height:84px}
+
+/*footer*/
+
+.footer h3{font-size:15px}
+.footer h2{position:absolute;left:-9999px;top:-9999px}
+.footer_top_wrap{background:#f0f0f0}
+.footer_top{width:1100px;margin:auto;padding:30px 0}
+.footer_top h3,.footer_top li{float:left}
+.company_guide,.term,.customer_service{overflow:hidden;line-height:30px}
+.company_guide ul,.term ul,.customer_service ul{margin-left:100px}
+.company_guide li a,.term li a,.customer_service li a{font-size:12px;margin-right:15px}
+
+.footer_bottom_wrap{background:#e0e0e0}
+.footer_bottom{width:1100px;margin:auto;padding:40px 0;position:relative}
+
+.sns_app{overflow:hidden}
+.sns{float:left;margin-right:40px}
+.sns h3{position:absolute;left:-9999px;top:-9999px}
+.sns1{width:40px;height:40px;background:url(../images/twitter.png) no-repeat center;text-indent:-9999px;float:left;margin-right:15px}
+.sns2{width:40px;height:40px;background:url(../images/facebook.png) no-repeat center;text-indent:-9999px;float:left;margin-right:15px}
+.sns3{width:40px;height:40px;background:url(../images/youtube.png) no-repeat center;text-indent:-9999px;float:left;margin-right:15px}
+.sns4{width:40px;height:40px;background:url(../images/insta.png) no-repeat center;text-indent:-9999px;float:left;margin-right:15px}
+.sns5{width:40px;height:40px;background:url(../images/blog.png) no-repeat center;text-indent:-9999px;float:left}
+.sns li a{display:block;width:40px;height:40px}
+
+.app_download h3{float:left;line-height:40px;margin-right:20px}
+.ios{width:48px;height:23px;background:url(../images/app_ios.png) no-repeat;text-indent:-9999px;float:left;margin:10px 15px 0 0}
+.and{width:78px;height:23px;background:url(../images/app_and.png) no-repeat;text-indent:-9999px;float:left;margin-top:10px}
+.ios a{display:block;width:48px;height:23px}
+.and a{display:block;width:78px;height:23px}
+
+.news_letter input{width:260px;height:30px;border:0;margin-top:10px}
+.news_letter p{color:#a0a0a0;position:absolute;top:25px;left:5px}
+.news_btn{width:30px;height:30px;background:url(../images/news_send.png) no-repeat center;text-indent:-9999px;border:0;cursor:pointer}
+.footer_right{position:absolute;right:0;top:40px}
+.footer_right p a{margin-top:30px;float:right;text-decoration:underline;color:#6b6b6b}
+
+.footer_box{margin-top:35px;font-size:12px}
+.footer_txt1:after,.footer_txt3:after,.footer_txt4:after,.footer_txt5:after,.footer_txt7:after{content:"|";margin:0 10px}
+
+.footer_txt1,.footer_txt2,.footer_txt3,.footer_txt4,.footer_txt5,.footer_txt6,.footer_txt7,.footer_txt8{float:left}
+
+.footer_box1,.footer_box2,.footer_box3{overflow:hidden;margin-bottom:10px}
+.footer_txt1{font-weight:bold}
+
+.pop_wrap{position:fixed}
+.pop_close a{display:block;margin:auto; margin-top:-60px;width:20px;height:20px;background:url(../images/pop_close.png) no-repeat center;text-indent:-9999px;z-index:1;position:relative

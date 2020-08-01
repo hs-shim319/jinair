@@ -1,0 +1,10 @@
+.join{width:706px;margin:auto}
+.join h2{font-weight:normal;font-size:25px;text-align:center;margin:70px 0 35px}
+.sel{overflow:hidden;margin-bottom:30px}
+.sel1 a{float:left;width:200px;height:250px;font-size:20px;background:#eee url(../images/join_14up.png) no-repeat center 60px;margin-right:53px;padding-top:166px;box-sizing:border-box;text-align:center}
+.sel2 a{float:left;width:200px;height:250px;font-size:20px;background:#eee url(../images/join_14down.png) no-repeat center 60px;margin-right:53px;padding-top:166px;box-sizing:border-box;text-align:center}
+.sel3 a{float:left;width:200px;height:250px;font-size:20px;background:#eee url(../images/join_company.png) no-repeat center 60px;padding-top:166px;box-sizing:border-box;text-align:center}
+.join>ul span{display:block}
+.sel3 span{font-size:15px}
+.caution{line-height:26px;margin-bottom:200px}
+.caution li:before{content:"* "}
