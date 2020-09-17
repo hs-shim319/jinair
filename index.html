@@ -4,33 +4,10 @@
     <meta charset="UTF-8">
     <title>진에어</title>
     <meta name="viewport" content="width=1100">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".menu>li").hover(function(){
-                $(".menu ul,.gnb_bg").stop().slideDown('fast');
-            },function(){                
-                $(".menu ul,.gnb_bg").stop().slideUp('fast');
-            });
-            $(".language").click(function(){
-                $(".language ul").stop().toggle();
-            });
-            $(".departure_wrap>a").click(function(){
-                $(this).next(".departure").stop().fadeToggle();
-            });
-            $(".destination_wrap>a").click(function(){
-                $(this).next(".destination").stop().fadeToggle();
-            });
-            $(".wish_btn_wrap .btn2").click(function(){
-                $(".wish_list_more").fadeToggle('fast');
-            });
-            /*탑버튼*/
-            $(".top_btn").click(function(){
-                return $("html, body").animate({scrollTop:0},300),!1});
-            });
-    </script>
-    <script src="js/mainpopup.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/mainpopup.js"></script>
 </head>
 <body>
     <div class="h_skip">
@@ -38,7 +15,7 @@
         <a href="#none">로그인 바로가기</a>
         <a href="#none">사이트맵 바로가기</a>
     </div>
-    <div id="header">
+    <header id="header">
         <h1><a href="index.html">진에어</a></h1>
         <nav class="gnb">
             <h2>주요메뉴</h2>
@@ -99,13 +76,13 @@
         </nav><!--gnb'-->
         <div class="gnb_bg"></div>
         <div class="top_menu_wrap">
-            <div class="top_menu">
+            <section class="top_menu">
                <h2>사용자메뉴</h2>
                 <ul>
                     <li class="top_menu_list"><a href="login.html">로그인</a></li>
                     <li class="top_menu_list"><a href="join_1.html">회원가입</a></li>
                     <li class="language">
-                        <p><a href="#none">LANGUAGE</a></p>
+                        <a href="#none">LANGUAGE</a>
                         <ul>
                             <li class="lang_k"><a href="#none">한국어</a></li>
                             <li class="lang_e"><a href="#none">ENGLISH</a></li>
@@ -114,52 +91,106 @@
                         </ul>
                     </li>
                 </ul>
-            </div><!-- top_menu-->  
-        </div>
+            </section><!-- top_menu-->  
+        </div><!-- top_menu_wrap--> 
         <div class="notice_wrap">
-            <div class="notice">
+            <section class="notice">
                 <h2>공지사항</h2>
                 <a href="#none">
-                    <p>진에어 국내선 비정상운항 안내 
-                    <span>자세히보기></span></p>
+                    <p>진에어 국내선 비정상운항 안내</p>
                 </a>
-            </div><!--notice-->
-            <div class="notice_bg"></div>
+            </section><!--notice-->
         </div>
-    </div><!--header-->
+    </header><!--header-->
     <main id="content">
-       <div class="main_banner">
-        <div class="main_image">
-            <h2>새소식</h2>    
-            <ul>
-                <li class="main_image01"><a href="#none">2020 봄맞이 제주 이벤트 제주에서 봄을 봄</a></li>
-<!--
-                <li>2020 봄맞이 제주 이벤트 제주에서 봄을 봄</li>
-                <li>2020 봄맞이 제주 이벤트 제주에서 봄을 봄</li>
-                <li>2020 봄맞이 제주 이벤트 제주에서 봄을 봄</li>
-                <li>2020 봄맞이 제주 이벤트 제주에서 봄을 봄</li>
--->
+        <section class="main_banner">
+            <h2>새소식</h2>
+            <div class="img_area">    
+            <ul class="main_img">
+                <li><a href="#none"><img src="images/banner1.jpg" alt="2020 봄맞이 제주 이벤트 제주에서 봄을 봄"></a></li>
+                <li><a href="#none"><img src="images/banner2.jpg" alt="메인이미지"></a></li>
+                <li><a href="#none"><img src="images/banner3.jpg" alt="메인이미지"></a></li>
+                <li><a href="#none"><img src="images/banner2.jpg" alt="메인이미지"></a></li>
+                <li><a href="#none"><img src="images/banner3.jpg" alt="메인이미지"></a></li>
             </ul>
-            <div class="banner_slider_wrap">
-                <p class="main_image_prev"><a href="#none">이전</a></p>
-                <p class="main_image_next"><a href="#none">다음</a></p>
             </div>
-        </div>
-        <div class="ticket_search_wrap">
-        <div class="ticket_search">
-            <h2>항공권검색</h2>
-            <h3>여정선택</h3>
-            <form name="contact.php" action="contact_form" method="post">
-                <div class="radio">
-                <label><input type="radio" name="tripType" checked/> 왕복</label>
-                <label><input type="radio" name="tripType"/> 편도</label>
-                <label><input type="radio" name="tripType"/> 다구간</label>
-                </div>
-                <div class="wrap">
-                    <div class="departure_wrap">
-                        <a href="#none">출발지</a>
-                        <div class="departure">
-                            <h3>출발지선택</h3>
+            <div class="slider_btn">
+                <p class="prev"><a href="#none">이전</a></p>
+                <p class="next"><a href="#none">다음</a></p>
+            </div>
+            <div class="ticket_search_wrap">
+            <section class="ticket_search">
+                <h2>항공권검색</h2>
+                <h3>여정선택</h3>
+                <form name="contact.php" action="contact_form" method="post">
+                    <div class="radio">
+                    <label><input type="radio" name="tripType" checked/> 왕복</label>
+                    <label><input type="radio" name="tripType"/> 편도</label>
+                    <label><input type="radio" name="tripType"/> 다구간</label>
+                    </div>
+                    <div class="wrap">
+                        <div class="departure_wrap">
+                            <a href="#none">출발지</a>
+                            <div class="departure">
+                                <h3>출발지선택</h3>
+                                <ul>
+                                    <li class="sel_contury"><span>한국</span>
+                                        <ul>
+                                            <li><a href="#none">서울/인천(ICN)</a></li>
+                                            <li><a href="#none">서울/김포(GMP)</a></li>
+                                            <li><a href="#none">부산(PUS)</a></li>
+                                            <li><a href="#none">제주(CJU)</a></li>
+                                            <li><a href="#none">청주(CJJ)</a></li>
+                                            <li><a href="#none">광주(KWJ)</a></li>
+                                            <li><a href="#none">대구(TAE)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sel_contury"><span>동북아</span>
+                                        <ul>
+                                            <li><a href="#none">도쿄/나리타(NRT)</a></li>
+                                            <li><a href="#none">오사카/간사이(KIX)</a></li>
+                                            <li><a href="#none">후쿠오카(FUK)</a></li>
+                                            <li><a href="#none">삿포로(CTS)</a></li>
+                                            <li><a href="#none">오키나와(OKA)</a></li>
+                                            <li><a href="#none">기타큐슈(KKJ)</a></li>
+                                            <li><a href="#none">상하이/푸동(PVG)</a></li>
+                                            <li><a href="#none">시안(XIY)</a></li>
+                                            <li><a href="#none">홍콩(HKG)</a></li>
+                                            <li><a href="#none">마카오(MFM)</a></li>
+                                            <li><a href="#none">타이베이/타오위안(TPE)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sel_contury"><span>동남아</span>
+                                        <ul>
+                                            <li><a href="#none">방콕(BKK)</a></li>
+                                            <li><a href="#none">푸껫(HKT)</a></li>
+                                            <li><a href="#none">세부(CEB)</a></li>
+                                            <li><a href="#none">클락(CRK)</a></li>
+                                            <li><a href="#none">보라카이/칼리보(KLO)</a></li>
+                                            <li><a href="#none">다낭(DAD)</a></li>
+                                            <li><a href="#none">하노이(HAN)</a></li>
+                                            <li><a href="#none">비엔티안(VTE)</a></li>
+                                            <li><a href="#none">코타 키나발루(BKI)</a></li>
+                                            <li><a href="#none">조호르바루(JHB)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sel_contury"><span>대양주</span>
+                                        <ul>
+                                            <li><a href="#none">괌(GUM)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sel_contury_l"><span>미주</span>
+                                        <ul>
+                                            <li><a href="#none">하와이, 호놀룰루(HNL)</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div><!--departure-->
+                            </div>
+                        <div class="destination_wrap">
+                            <a href="#none">도착지</a>
+                            <div class="destination">
+                            <h3>도착지선택</h3>
                             <ul>
                                 <li class="sel_contury"><span>한국</span>
                                     <ul>
@@ -212,165 +243,94 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </div><!--departure-->
+                        </div><!--destination-->
                         </div>
-                    <div class="destination_wrap">
-                        <a href="#none">도착지</a>
-                        <div class="destination">
-                        <h3>도착지선택</h3>
-                        <ul>
-                            <li class="sel_contury"><span>한국</span>
-                                <ul>
-                                    <li><a href="#none">서울/인천(ICN)</a></li>
-                                    <li><a href="#none">서울/김포(GMP)</a></li>
-                                    <li><a href="#none">부산(PUS)</a></li>
-                                    <li><a href="#none">제주(CJU)</a></li>
-                                    <li><a href="#none">청주(CJJ)</a></li>
-                                    <li><a href="#none">광주(KWJ)</a></li>
-                                    <li><a href="#none">대구(TAE)</a></li>
-                                </ul>
-                            </li>
-                            <li class="sel_contury"><span>동북아</span>
-                                <ul>
-                                    <li><a href="#none">도쿄/나리타(NRT)</a></li>
-                                    <li><a href="#none">오사카/간사이(KIX)</a></li>
-                                    <li><a href="#none">후쿠오카(FUK)</a></li>
-                                    <li><a href="#none">삿포로(CTS)</a></li>
-                                    <li><a href="#none">오키나와(OKA)</a></li>
-                                    <li><a href="#none">기타큐슈(KKJ)</a></li>
-                                    <li><a href="#none">상하이/푸동(PVG)</a></li>
-                                    <li><a href="#none">시안(XIY)</a></li>
-                                    <li><a href="#none">홍콩(HKG)</a></li>
-                                    <li><a href="#none">마카오(MFM)</a></li>
-                                    <li><a href="#none">타이베이/타오위안(TPE)</a></li>
-                                </ul>
-                            </li>
-                            <li class="sel_contury"><span>동남아</span>
-                                <ul>
-                                    <li><a href="#none">방콕(BKK)</a></li>
-                                    <li><a href="#none">푸껫(HKT)</a></li>
-                                    <li><a href="#none">세부(CEB)</a></li>
-                                    <li><a href="#none">클락(CRK)</a></li>
-                                    <li><a href="#none">보라카이/칼리보(KLO)</a></li>
-                                    <li><a href="#none">다낭(DAD)</a></li>
-                                    <li><a href="#none">하노이(HAN)</a></li>
-                                    <li><a href="#none">비엔티안(VTE)</a></li>
-                                    <li><a href="#none">코타 키나발루(BKI)</a></li>
-                                    <li><a href="#none">조호르바루(JHB)</a></li>
-                                </ul>
-                            </li>
-                            <li class="sel_contury"><span>대양주</span>
-                                <ul>
-                                    <li><a href="#none">괌(GUM)</a></li>
-                                </ul>
-                            </li>
-                            <li class="sel_contury_l"><span>미주</span>
-                                <ul>
-                                    <li><a href="#none">하와이, 호놀룰루(HNL)</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div><!--destination-->
+                        <a href="#none" class="flight_date">탑승일</a>
+                        <a href="#none" class="flight_number">탑승객수</a>
+                        <button type="button" class="ticket_btn">조회</button>
                     </div>
-                    <a href="#none" class="flight_date">탑승일</a>
-                    <a href="#none" class="flight_number">탑승객수</a>
-                    <button type="button" class="ticket_btn">조회</button>
-                </div>
-            </form>
-            <p class="bonus"><a href="#none">보너스 항공권 예매</a></p>
-        </div><!--ticket_search-->
-        </div><!--ticket_search_wrap-->
-        </div><!--main_banner-->
-        <div class="wish_list_wrap">
+                </form>
+                <p class="bonus"><a href="#none">보너스 항공권 예매</a></p>
+            </section><!--ticket_search-->
+            </div><!--ticket_search_wrap-->
+        </section><!--main_banner-->
+        <section class="wish_list_wrap">
             <div class="wish_list">
-                <div class="wish_list_text">
-                    <h2>특별가알림 <span class="red_txt">위시리스트</span></h2>       
-                    <p class="txt">선택하신 노선과 일정, 그리고 금액에 맞는 항공권의 알림을 받아보세요!</p>
-                    <div class="wish_btn_wrap">
-                    <p><a href="#none" class="btn1">특별가 알림 신청(위시리스트)</a></p>
-                    <p><a href="#none" class="btn2">자세히보기∨</a></p>
-                    </div>
-                    <p class="wish_list_more">
-                    · 선택하신 노선과 일정, 그리고 금액에 맞는 항공권 정보를 이메일을 통해 받아보실 수 있습니다.<br>
-                    · 선택하신 일정의 가는날/오는날 기준 ±1일 내의 항공권 정보도 함께 알려드립니다.<br>
-                    · 특별가 알림 해제는 마이페이지의 위시리스트에서 가능합니다
-                    </p>
+                <h2>특별가알림 <span class="red_txt">위시리스트</span></h2>       
+                <p>선택하신 노선과 일정, 그리고 금액에 맞는 항공권의 알림을 받아보세요!</p>
+                <div class="wish_btn_wrap">
+                    <a href="#none" class="btn1">특별가 알림 신청(위시리스트)</a>
+                    <a href="#none" class="btn2">자세히보기∨</a>
                 </div>
+                <article class="wish_list_more">
+                    <ul>
+                        <li>선택하신 노선과 일정, 그리고 금액에 맞는 항공권 정보를 이메일을 통해 받아보실 수 있습니다.</li>
+                        <li>선택하신 일정의 가는날/오는날 기준 ±1일 내의 항공권 정보도 함께 알려드립니다.</li>
+                        <li>특별가 알림 해제는 마이페이지의 위시리스트에서 가능합니다.</li>
+                    </ul>
+                </article>
             </div><!--wish_list-->
-        </div><!--wish_list_wrap-->
-        <div class="cheapest_price">
+        </section><!--wish_list_wrap-->
+        <section class="cheapest_price">
             <h2><span class="red_txt">최저가</span>를 한눈에!</h2>
-            <a href="#none" class="product1_link">
-            <div class="cheapest_product1">
-                <dl class="product1_txt">
+            <a href="#none" class="cheapest_product1">
+                <dl>
                     <dt class="bold_20">서울/김포 → 제주</dt>
                     <dd class="bold_20">KRW <span class="red_txt">27,400</span></dd>
                     <dd class="date">2020-03-17 ~ 2020-04-07 출발</dd>
-                    <dd class="blue_box">출발임박</dd>
-                    <dd class="green_box">무료수하물</dd>
+                    <dd class="box blue">출발임박</dd>
+                    <dd class="box green">무료수하물</dd>
                 </dl>
-            </div>
             </a>
-            <a href="#none" class="prouduct2_link">
-            <div class="cheapest_product2">
-                <dl class="product2_txt">
+            <a href="#none" class="cheapest_product2">
+                <dl>
                     <dt class="bold_20">부산 → 제주</dt>
                     <dd class="bold_20">KRW <span class="red_txt">20,100</span></dd>
                     <dd class="date">2020-03-17 ~ 2020-04-07 출발</dd>
-                    <dd class="blue_box">출발임박</dd>
-                    <dd class="green_box">무료수하물</dd>
+                    <dd class="box blue">출발임박</dd>
+                    <dd class="box green">무료수하물</dd>
                 </dl>
-            </div>
             </a>
-            <a href="#none" class="prouduct3_link">
-            <div class="cheapest_product3">
-                <dl class="product3_txt">
+            <a href="#none" class="cheapest_product3">
+                <dl>
                     <dt class="bold_20">청주 → 제주</dt>
                     <dd class="bold_20">KRW <span class="red_txt">20,400</span></dd>
                     <dd class="date">2020-03-17 ~ 2020-04-07 출발</dd>
-                    <dd class="blue_box">출발임박</dd>
-                    <dd class="green_box">무료수하물</dd>
+                    <dd class="box blue">출발임박</dd>
+                    <dd class="box green">무료수하물</dd>
                 </dl>
-            </div>
             </a>
-        </div><!--cheapest_price-->  
-
-        <div class="custom_air_wrap">
+        </section><!--cheapest_price--> 
+        <section class="custom_air_wrap">
             <div class="custom_air">
-                <div class="custom_air_txt">
                 <h2>맞춤항공권</h2>
                 <p>내가 가진 예산으로 갈 수 있는 여행지가 궁금하다면?</p>
                 <a href="#none">자세히보기</a>
-                </div>
             </div><!--custom_air-->
-        </div><!--custom_air_wrap-->
+        </section><!--custom_air_wrap-->
 
-        <div class="events">    
+        <section class="events">    
             <h2>진에어의 <span class="red_txt">이벤트</span> 소식</h2>
             <div class="event_list">
-                <div class="event1">
-                    <a href="#none">
+                <a href="#none" class="event1">
                     <dl>
                         <dt>진에어 <span class="green_txt">향기 테라피</span></dt>
                         <dd>#편안 #안전 #행복</dd>
-                        <dd class="event1_date">2019.12.18 - 2020.12.17</dd>
+                        <dd>2019.12.18 - 2020.12.17</dd>
                     </dl>
-                    </a>
-                </div>
-                <div class="event2">
-                    <a href="#none">
+                </a>
+                <a href="#none" class="event2">
                     <dl>
                         <dt>복잡한 <span class="green_txt">출국장 면세점</span>은 <span class="green_txt">그만!</span></dt>
                         <dd>편안한 기내 + 저렴한 가격 + 간편하게 받기</dd>
-                        <dd class="mv_skyshop">[skyshop으로 이동]</dd>
+                        <dd>[skyshop으로 이동]</dd>
                     </dl>
-                    </a>
-                </div>
+                </a>
             </div>
             <p><a href="#none">진행중인 이벤트 전체보기 ></a></p>
-        </div><!--events-->
+        </section><!--events-->
 
-        <div class="extra_service">
+        <section class="extra_service">
             <h2>부가서비스</h2>
             <ul>
                 <li class="ex_service1"><a href="#none">체크인</a></li>
@@ -379,23 +339,15 @@
                 <li class="ex_service4"><a href="#none">기내식</a></li>
                 <li class="ex_service5"><a href="#none">기내유상판매</a></li>
             </ul>
-        </div><!--extra_service-->   
+        </section><!--extra_service-->   
     </main><!--content-->
-    
-    <div class="mini_header_wrap">
-        <div class="mini_header">
-            <a href="#none" class="mini_header_logo">진에어</a>
-            <a href="#none" class="mini_header_menu">메뉴</a>
-        </div> 
-    </div><!--mini_header_wrap-->
-    <div class="side_menu">
+    <article class="side_menu">
         <p class="chat_bot"><a href="#none">JAID 챗봇 상담</a></p>
         <p class="top_btn"><a href="#none">맨 위로 올라가기</a></p>
-    </div><!--side_menu-->
-    
+    </article><!--side_menu-->    
     <footer class="footer">
        <h2>사이트 이용안내</h2>
-        <div class="footer_top_wrap">
+        <section class="footer_top_wrap">
             <div class="footer_top">
                 <div class="company_guide">
                     <h3>회사안내</h3>
@@ -437,10 +389,10 @@
                     </ul>
                 </div><!--customer_service-->
             </div><!--footer_top-->
-        </div><!--footer_top_wrap-->
-        <div class="footer_bottom_wrap">
+        </section><!--footer_top_wrap-->
+        <section class="footer_bottom_wrap">
             <div class="footer_bottom">
-               <div class="sns_app">
+                <div class="sns_app">
                     <div class="sns">      
                         <h3>SNS</h3>
                         <ul>
@@ -451,7 +403,6 @@
                             <li class="sns5"><a href="#none">네이버 블로그</a></li>
                         </ul>
                     </div><!--sns--> 
-
                     <div class="app_download">     
                         <h3>APP 다운로드</h3>
                         <ul>
@@ -459,8 +410,7 @@
                             <li class="and"><a href="#none">ANDROID</a></li>
                         </ul>
                     </div><!--app_download--> 
-                </div><!--sns_app-->
-                
+                </div><!--sns_app-->                
                 <div class="footer_right">
                     <div class="news_letter">
                         <h3>뉴스레터 신청</h3>
@@ -471,29 +421,27 @@
                     </div><!--news_letter-->
                     <p><a href="#none">대리점 사이트 바로가기</a></p>
                 </div><!--footer_right-->
-                
                 <div class="footer_box">
-                <div class="footer_box1">
-                <p class="footer_txt1">고객서비스센터 1600-6200, 02-6099-1200</p>
-                <p class="footer_txt2">업무시간 오전 6:00 ~ 오후 8:00</p>
-                </div><!--footer_box1-->
-                
-                <div class="footer_box2">
-                <p class="footer_txt3">(주)진에어</p>
-                <p class="footer_txt4">대표이사 최정호</p>
-                <p class="footer_txt5">사업자등록번호 121-81-89086</p>
-                <p class="footer_txt6">통신판매업 신고번호 : 제 2008-서울강서-0408</p>
-                </div><!--box2-->
-                <div class="footer_box3">
-                <address class="footer_txt7">주소 : 서울시 강서구 공항대로 453</address>
-                <p class="footer_txt8">개인정보보호책임자 : 이광</p>
-                </div><!--box3-->
-                <p class="footer_txt9">Copyrightⓒ JINAIR All Rights Reseved.</p>
+                    <div class="footer_box1">
+                        <p class="footer_txt1">고객서비스센터 1600-6200, 02-6099-1200</p>
+                        <p class="footer_txt2">업무시간 오전 6:00 ~ 오후 8:00</p>
+                    </div><!--footer_box1-->
+                    <div class="footer_box2">
+                        <p class="footer_txt3">(주)진에어</p>
+                        <p class="footer_txt4">대표이사 최정호</p>
+                        <p class="footer_txt5">사업자등록번호 121-81-89086</p>
+                        <p class="footer_txt6">통신판매업 신고번호 : 제 2008-서울강서-0408</p>
+                    </div><!--box2-->
+                    <div class="footer_box3">
+                        <address class="footer_txt7">주소 : 서울시 강서구 공항대로 453</address>
+                        <p class="footer_txt8">개인정보보호책임자 : 이광</p>
+                    </div><!--box3-->
+                    <p class="footer_txt9">Copyrightⓒ JINAIR All Rights Reseved.</p>
                 </div>
             </div><!--footer_bottom-->
-        </div>
+        </section>
     </footer><!--footer-->   
-    
+    <!--popup-->
     <div id="showimage" style="z-index:99;position:absolute;width:322px;left:50px;top:150px;">
       <script>
         function closeWin(){

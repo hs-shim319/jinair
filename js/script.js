@@ -28,6 +28,7 @@ $(document).ready(function () {
     let imgwidth=$("ul.main_img").find("li").width();
     let main_width = imgwidth * len;
     console.log($(".main_img").width());
+    $(".img_area").css({width:imgwidth,marginLeft:-(imgwidth/2)});
     $(".main_img").css({width:main_width});
     console.log($(".main_img").width());
     

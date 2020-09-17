@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body,input,button{font-family:"Nanum Gothic","맑은 고딕","돋움";font-size:15px}
+body,h1,h2,h3,p,div,ul,li,dl,dt,dd{margin:0;padding:0}
+ul,li{list-style:none}
+a{text-decoration:none;color:inherit}
+address{font-style:normal}
+h2{font-size:25px}
+.red_txt{color:#7d0049}
+.h_skip{position:absolute;top:-9999px;left:-9999px}
+
+body{overflow-x:hidden}
+/*header*/
+#header{width:100%;height:150px;background:#c1d72e;margin-top:50px;padding-top:40px;box-sizing:border-box;position:relative;z-index:10}
+h1{width:84px;height:60px;background:url(../images/logo.jpg) no-repeat;text-indent:-9999px;margin:auto}
+h1 a{display:block;width:84px;height:60px}
+.gnb{width:960px;margin:auto;overflow:hidden}
+.gnb_bg{width:100%;height:360px;background:#fff;position:absolute;top:150px}
+.gnb h2{position:absolute;left:-9999px;top:-9999px}
+.gnb>ul>li{float:left}
+.gnb>ul>li>a{width:160px;text-align:center;color:#fff;font-size:20px;line-height:50px;display:block}
+.menu ul{height:360px;background:#fff;padding-top:10px;border-right:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;overflow:hidden;position:relative;z-index:5}
+.m1 ul{border-left:1px solid #f0f0f0}
+.menu>li:hover{background:url(../images/gnb_hover.jpg)}
+.menu ul:hover,.menu>li:hover ul{background:#f0f0f0}
+.menu li ul li a{line-height:30px;display:block;padding:0 10px}
+.menu li ul li a:hover{color:#7d0049;font-weight:bold} 
+.menu ul,.gnb_bg{display:none}
+
+.top_menu_wrap{width:100%;position:absolute;top:0;color:#fff}
+.top_menu{width:1100px;margin:auto;margin-top:10px}
+.top_menu ul{float:right}
+.top_menu h2{position:absolute;left:-9999px;top:-9999px}
+.top_menu>ul>li{float:left}
+.top_menu_list:after{content:"|";margin:0 10px;color:#fff}
+.top_menu a{color:#fff}
+.language{width:110px;background:url(../images/arrow_lang.png) no-repeat right 5px}
+.language ul{width:110px;margin-top:10px;padding:10px;box-sizing:border-box;border:1px solid #a0a0a0;background:#fff;display:none}
+.language ul a{line-height:20px;font-size:12px;color:#232323}
+
+.notice_wrap{position:absolute;width:100%;top:-50px;height:50px;background:#a0a0a0;color:#fff}
+.notice{width:1100px;margin:auto;overflow:hidden;line-height:50px}
+.notice h2{width:120px;height:50px;background:url(../images/notice.png) no-repeat 0 10px;text-indent:-9999px;margin-right:25px;float:left}
+.notice a{float:left}
+
+/*content*/
+.main_banner{position:relative;margin-bottom:-5px}
+.main_banner h2{position:absolute;left:-9999px;top:-9999px}
+.main_banner div.img_area{position:relative;left:50%;overflow:hidden}
+.main_banner ul.main_img{transition:all 0.2s;overflow:hidden}
+.main_banner ul.main_img li{float:left}
+.slider_btn{position:absolute;width:90%;top:150px;margin:0 5%}
+.slider_btn .prev{width:18px;height:31px;background:url(../images/banner_prev.png) no-repeat;text-indent:-9999px;float:left}
+.slider_btn .next{width:18px;height:31px;background:url(../images/banner_next.png) no-repeat;text-indent:-9999px;float:right}
+.slider_btn .prev:hover{width:75px;height:75px;background:url(../images/banner_prev_hover.png) no-repeat;position:relative;top:-22px;left:-28px}
+.slider_btn .next:hover{width:75px;height:75px;background:url(../images/banner_next_hover.png) no-repeat;position:relative;top:-22px;left:29px}
+.slider_btn a{display:block;width:100%;height:100%}
+
+.ticket_search h2,.ticket_search h3{position:absolute;left:-9999px;top:-9999px}
+.ticket_search_wrap{width:100%;position:absolute;z-index:5;top:300px}
+.ticket_search{width:1100px;height:180px;background:rgba(255,255,255,0.9);box-sizing:border-box;margin:auto;padding:40px 30px}
+.bonus{float:right;position:relative;top:-110px}
+.bonus a{display:block;line-height:25px;color:#6b6b6b;position:relative;background:url(../images/ticket_bonus.png) no-repeat center left;padding-left:30px}
+.radio{width:300px;text-align:center;margin:0 auto 30px}
+.departure_wrap,.destination_wrap,.flight_date,.flight_number{float:left}
+.departure_wrap a,.destination_wrap a,.flight_date,.flight_number{color:#6b6b6b}
+.wrap{width:1040px;margin:auto;overflow:hidden}
+.departure_wrap>a,.destination_wrap>a{display:block;width:200px;line-height:30px;border:1px solid #a0a0a0;padding:10px;background:url(../images/ticket_loca.png) no-repeat 160px center;margin-right:30px;box-sizing: border-box}
+.flight_date{display:block;width:200px;line-height:30px;border:1px solid #a0a0a0;padding:10px;background:url(../images/ticket_date.png) no-repeat 160px center;margin-right:30px;box-sizing: border-box}
+.flight_number{display:block;width:200px;line-height:30px;border:1px solid #a0a0a0;padding:10px;background:url(../images/ticket_num.png) no-repeat 160px center;margin-right:30px;box-sizing: border-box}
+.ticket_btn{width:100px;height:50px;border:0;background:#c1d72e;float:right;cursor:pointer}
+
+.departure,.destination{display:none}
+.departure,.destination{position:absolute;height:365px;width:890px;padding:30px;background:#fff;border:1px solid #e0e0e0;box-sizing:border-box}
+.sel_contury{float:left;width:164px}
+.sel_contury_l{float:left}
+.sel_contury span,.sel_contury_l span{color:#7d0049;font-size:20px;font-weight:bold}
+.sel_contury ul,.sel_contury_l ul{margin-top:15px}
+.sel_contury li,.sel_contury_l li{line-height:25px}
+.sel_contury a:hover,.sel_contury_l a:hover{color:#7d0049;font-weight:bold}
+ 
+.wish_list_wrap{background:#e0e0e0;width:100%}
+.wish_list{width:1100px;margin:auto;padding:50px 0;background:url(../images/wishlist_bg.png) no-repeat 50px center;position:relative;padding-left:250px;box-sizing:border-box}
+.wish_list h2{margin-top:30px}
+.wish_list p{position:absolute;top:50px}
+.wish_btn_wrap{position:relative;margin-top:30px;overflow:hidden}
+.wish_btn_wrap a{padding:15px 20px;background:#c1d72e;text-align:center;float:left}
+.wish_btn_wrap a:nth-last-child(1){margin-left:30px}
+.wish_btn_wrap a:hover{background:#7c0048;color:#fff}
+.wish_list_more{width:500px;background:#fff;position:absolute;margin:10px 0 0 250px;border:1px solid #e0e0e0;padding:20px;line-height:25px;box-sizing:border-box;z-index:5;display:none}
+.wish_list_more li:before{content:"· "}
+
+.cheapest_price{padding:100px 0;margin:auto;width:1100px;position:relative;overflow:hidden}
+.cheapest_price h2{text-align:center;margin-bottom:50px}
+.cheapest_price a{float:left;width:310px;height:330px;margin:0 28px}
+.cheapest_product1{background:url(../images/cheapest_product01.jpg) no-repeat;60px;position:relative;background-size:310px;transition:0.2s}
+.cheapest_product2{background:url(../images/cheapest_product02.jpg) no-repeat; position:relative;background-size:310px;transition:0.2s}
+.cheapest_product3{background:url(../images/cheapest_product03.jpg) no-repeat; position:relative;background-size:310px;transition:0.2s}
+.cheapest_price a:hover{background-size:320px}
+.cheapest_price dl{width:310px;height:130px;background:rgba(255,255,255,0.8);margin-top:200px;padding:30px 15px 20px;box-sizing:border-box}
+.cheapest_price dt{font-weight:bold;font-size:20px}
+.cheapest_price dd:nth-child(2){font-weight:bold;font-size:18px;margin-top:5px}
+.cheapest_price .date{margin-top:10px}
+.cheapest_price .box{width:90px;line-height:30px;text-align:center;color:#fff;position:relative;left:200px}
+.cheapest_price .blue{background:#00adef;top:-300px}
+.cheapest_price .green{background:#c1d72e;top:-298px}
+
+.custom_air_wrap{background:url(../images/custom_bg.jpg) no-repeat center;margin-bottom:50px}
+.custom_air{width:1100px;padding:50px 0 50px 350px;margin:auto;background:url(../images/airplane.png) no-repeat 50px center;border-top:1px solid rgba(255,255,255,0);color:#fff;position:relative;box-sizing:border-box}
+.custom_air h2{margin-top:30px}
+.custom_air p{position:absolute;top:50px}
+.custom_air a{padding:10px 20px;background:#c1d72e;text-align:center;box-sizing:border-box;margin-top:30px;display:inline-block}
+.custom_air a:hover{background:#7c0048;color:#fff}
+
+.events{width:1100px;padding:100px 0;margin:-50px auto 0;position:relative}
+.events h2{text-align:center;margin-bottom:50px}
+.events p{text-align:center;color:#7c0048}
+.events p:hover{text-decoration: underline}
+.events .event_list{display:flex;justify-content:space-between;color:#fff;margin-bottom:50px}
+.events dt{font-size:20px}
+.events dd{margin-top:10px}
+.events dd:nth-last-child(1){margin-top:50px;display:none;transition:0.2s}
+.event_list a{display:block;width:540px;height:370px;position:relative;z-index:1;color:#fff}
+.event1{width:540px;height:370px;background:url(../images/event01.png) no-repeat;position:relative;overflow:hidden}
+.event2{width:540px;height:370px;background:url(../images/event02.png) no-repeat;position:relative;overflow:hidden}
+.events dl{width:540px;height:110px;background:rgba(0,0,0,0.8);padding:30px;margin-top:260px;box-sizing:border-box;transition:0.2s}
+.events a:hover dl{width:540px;height:370px;background:rgba(0,0,0,0.8);margin-top:0;text-align:center;padding-top:150px}
+.events a:hover .green_txt{color:#c1d72e}
+.events a:hover dd:nth-last-child(1){display:block}
+
+.extra_service{width:1100px;margin:auto;padding:50px 0 150px}
+.extra_service h2{text-align:center;margin-bottom:50px}
+.extra_service ul{display:flex;justify-content:space-around;font-size:20px}
+.extra_service ul li a{display:block;width:130px;padding-top:140px;text-align:center;transition:all 0.1s}
+.ex_service1 a{background:url(../images/service01.png) no-repeat center 20px}
+.ex_service2 a{background:url(../images/service02.png) no-repeat center 10px}
+.ex_service3 a{background:url(../images/service03.png) no-repeat center 0}
+.ex_service4 a{background:url(../images/service04.png) no-repeat center 20px}
+.ex_service5 a{background:url(../images/service05.png) no-repeat center 0}
+.ex_service1 a:hover{background:url(../images/service01_hover.png) no-repeat center 20px}
+.ex_service2 a:hover{background:url(../images/service02_hover.png) no-repeat center 10px}
+.ex_service3 a:hover{background:url(../images/service03_hover.png) no-repeat center 0}
+.ex_service4 a:hover{background:url(../images/service04_hover.png) no-repeat center 20px}
+.ex_service5 a:hover{background:url(../images/service05_hover.png) no-repeat center 0}
+
+.side_menu{position:fixed;bottom:0;right:20px}
+.side_menu a{display:block;width:100%;height:100%}
+.chat_bot{width:50px;height:50px;background:url(../images/jaid.png) no-repeat center;text-indent:-9999px}
+.top_btn{width:50px;height:50px;background:url(../images/btn_top.png) no-repeat center;text-indent:-9999px;margin:10px 0 20px}
+
+/*footer*/
+.footer h2{position:absolute;left:-9999px;top:-9999px}
+.footer h3{font-size:15px}
+.footer_top_wrap{background:#f0f0f0}
+.footer_top{width:1100px;margin:auto;padding:30px 0}
+.footer_top h3,.footer_top li{float:left}
+.footer_top li:hover{font-weight:bold}
+.footer_top div{overflow:hidden;line-height:30px}
+.footer_top div ul{margin-left:100px}
+.footer_top li a{font-size:12px;margin-right:15px}
+
+.footer_bottom_wrap{background:#e0e0e0}
+.footer_bottom{width:1100px;margin:auto;padding:40px 0;position:relative}
+
+.sns_app{overflow:hidden}
+.sns h3{position:absolute;left:-9999px;top:-9999px}
+.sns{float:left;margin-right:20px}
+.sns ul li{width:40px;height:40px;text-indent:-9999px;float:left;margin:0 10px}
+.sns1{background:url(../images/twitter.png) no-repeat center}
+.sns2{background:url(../images/facebook.png) no-repeat center}
+.sns3{background:url(../images/youtube.png) no-repeat center}
+.sns4{background:url(../images/insta.png) no-repeat center}
+.sns5{background:url(../images/blog.png) no-repeat center}
+.sns li a{display:block;width:40px;height:40px}
+.app_download h3{float:left;line-height:40px;margin-right:20px}
+.ios{width:48px;height:23px;background:url(../images/app_ios.png) no-repeat;text-indent:-9999px;float:left;margin:10px 15px 0 0}
+.and{width:78px;height:23px;background:url(../images/app_and.png) no-repeat;text-indent:-9999px;float:left;margin-top:10px}
+.ios a{display:block;width:48px;height:23px}
+.and a{display:block;width:78px;height:23px}
+
+.news_letter input{width:260px;height:30px;border:0;margin-top:10px}
+.news_letter p{color:#a0a0a0;position:absolute;top:25px;left:5px}
+.news_btn{width:30px;height:30px;background:url(../images/news_send.png) no-repeat center;text-indent:-9999px;border:0;cursor:pointer}
+.footer_right{position:absolute;right:0;top:40px}
+.footer_right p a{margin-top:30px;float:right;text-decoration:underline;color:#6b6b6b}
+.footer_box{margin-top:35px;font-size:12px}
+.footer_txt1:after,.footer_txt3:after,.footer_txt4:after,.footer_txt5:after,.footer_txt7:after{content:"|";margin:0 10px}
+.footer_box p,.footer_box address{float:left}
+.footer_box div{overflow:hidden;margin-bottom:10px}
+.footer_txt1{font-weight:bold}
+
+.pop_wrap{position:fixed}
+.pop_close a{display:block;margin:auto; margin-top:-60px;width:20px;height:20px;background:url(../images/pop_close.png) no-repeat center;text-indent:-9999px;z-index:1;position:relative
